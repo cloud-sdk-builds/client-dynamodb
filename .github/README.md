@@ -1,7 +1,7 @@
 # 🟡 Community Browser CDN Build – JavaScript SDK Client Package
 
 This repository provides a **community-maintained, browser-ready distribution** of the npm module
-[`@aws-sdk/client-dynamodb`](https://www.npmjs.com/package/@aws-sdk/client-dynamodb/v/3.29.0).
+[`@aws-sdk/client-dynamodb`](https://www.npmjs.com/package/@aws-sdk/client-dynamodb/v/3.30.0).
 
 Each package is **automatically built and published to a CDN**, allowing developers to use the SDK client **directly in browsers** with **zero bundling or build steps**.
 
@@ -28,12 +28,12 @@ You can use this package directly in the browser via **jsDelivr** using an **imp
 CDN URL
 
 ```text
-https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb@3.29.0/index.min.mjs
+https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb@3.30.0/index.min.mjs
 ```
 
 SRI SHA Hash
 ```text
-sha384-EV0QbwBHSs44l3l2brIVcgv99FxVWNZ+toXDDJFDg9Kn0LWYHbSPAS+KMFN25bWm
+sha384-tKrH+DvXkA6A+z6UoqyS1l7JxdWDx/11BKb7N4eTRzAAx5k+dHBeBUuLt+fFAfv/
 ```
 
 ### 📌 Latest Version
@@ -53,10 +53,10 @@ https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb/index.min.mjs
     <script type="importmap">
       {
         "imports": {
-          "@aws-sdk/client-dynamodb": "https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb@3.29.0/index.min.mjs"
+          "@aws-sdk/client-dynamodb": "https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb@3.30.0/index.min.mjs"
         },
         "integrity": {
-          "https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb@3.29.0/index.min.mjs": "sha384-EV0QbwBHSs44l3l2brIVcgv99FxVWNZ+toXDDJFDg9Kn0LWYHbSPAS+KMFN25bWm"
+          "https://cdn.jsdelivr.net/gh/cloud-sdk-builds/client-dynamodb@3.30.0/index.min.mjs": "sha384-tKrH+DvXkA6A+z6UoqyS1l7JxdWDx/11BKb7N4eTRzAAx5k+dHBeBUuLt+fFAfv/"
         }
       }
     </script>
@@ -122,7 +122,7 @@ Replace
 
 When using CDN builds in production environments:
 
-* Always pin to a specific version (`@3.29.0`)
+* Always pin to a specific version (`@3.30.0`)
 * Avoid using `latest` in production to prevent unexpected breaking changes
 
 ---
@@ -142,7 +142,7 @@ https://github.com/cloud-sdk-builds/.github/issues
 This distribution follows the license terms included in the repository:
 
 ```
-https://github.com/cloud-sdk-builds/client-dynamodb/blob/refs/tags/3.29.0/LICENSE
+https://github.com/cloud-sdk-builds/client-dynamodb/blob/refs/tags/3.30.0/LICENSE
 ```
 
 ---
