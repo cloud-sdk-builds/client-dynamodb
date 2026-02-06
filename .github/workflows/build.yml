@@ -1,11 +1,8 @@
 name: Create jsdeliver index.min.mjs script
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - 'main'
-    paths:
-      - 'LICENSE'
+  schedule:
+    - cron: "26 7 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,7 +30,7 @@ jobs:
           npm install --prefix . semver@7.7.3
           chmod +x ./.github/tmp/release.sh
           node ./.github/tmp/release.mjs
-          node ./.github/tmp/first.mjs
+          
         env:
           REPO_NAME: ${{ github.event.repository.name }}
           GH_TOKEN: ${{ secrets.GH_PAT }}
